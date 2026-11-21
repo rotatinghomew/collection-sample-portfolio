@@ -1,0 +1,194 @@
+{
+  "rounds": [
+    {
+      "id": "R1",
+      "deadline": "2026-08-14",
+      "budget": 120000,
+      "required_themes": [
+        "江岸",
+        "器用"
+      ]
+    },
+    {
+      "id": "R2",
+      "deadline": "2026-08-30",
+      "budget": 170000,
+      "required_themes": [
+        "江岸"
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "id": "D11",
+      "design": "D1",
+      "material": "压纹纸",
+      "units": 40,
+      "shop": "印制台",
+      "hours": 6,
+      "start": "2026-08-09",
+      "deadline": "2026-08-12",
+      "themes": [
+        "江岸"
+      ]
+    },
+    {
+      "id": "D12",
+      "design": "D1",
+      "material": "素纸",
+      "units": 40,
+      "shop": "印制台",
+      "hours": 4,
+      "start": "2026-08-09",
+      "deadline": "2026-08-12",
+      "themes": []
+    },
+    {
+      "id": "D21",
+      "design": "D2",
+      "material": "压纹纸",
+      "units": 35,
+      "shop": "印制台",
+      "hours": 6,
+      "start": "2026-08-11",
+      "deadline": "2026-08-14",
+      "themes": [
+        "器用"
+      ]
+    },
+    {
+      "id": "D31",
+      "design": "D3",
+      "material": "陶片",
+      "units": 25,
+      "shop": "窑炉",
+      "hours": 7,
+      "start": "2026-08-11",
+      "deadline": "2026-08-13",
+      "themes": [
+        "器用"
+      ]
+    },
+    {
+      "id": "D41",
+      "design": "D4",
+      "material": "素纸",
+      "units": 35,
+      "shop": "印制台",
+      "hours": 5,
+      "start": "2026-08-10",
+      "deadline": "2026-08-14",
+      "themes": [
+        "江岸"
+      ]
+    }
+  ],
+  "offers": [
+    {
+      "id": "Q1",
+      "material": "压纹纸",
+      "minimum": 60,
+      "lot_step": 30,
+      "lot_price": 41500,
+      "valid_from": "2026-08-01",
+      "valid_until": "2026-08-06",
+      "arrives_on": "2026-08-08",
+      "revision_of": null
+    },
+    {
+      "id": "Q2",
+      "material": "素纸",
+      "minimum": 30,
+      "lot_step": 30,
+      "lot_price": 9000,
+      "valid_from": "2026-08-01",
+      "valid_until": "2026-08-12",
+      "arrives_on": "2026-08-08",
+      "revision_of": null
+    },
+    {
+      "id": "Q3",
+      "material": "陶片",
+      "minimum": 25,
+      "lot_step": 25,
+      "lot_price": 28500,
+      "valid_from": "2026-08-02",
+      "valid_until": "2026-08-10",
+      "arrives_on": "2026-08-10",
+      "revision_of": null
+    },
+    {
+      "id": "Q4",
+      "material": "压纹纸",
+      "minimum": 60,
+      "lot_step": 30,
+      "lot_price": 53000,
+      "valid_from": "2026-08-05",
+      "valid_until": "2026-08-12",
+      "arrives_on": "2026-08-12",
+      "revision_of": "Q1"
+    }
+  ],
+  "capacity": [
+    {
+      "shop": "印制台",
+      "on": "2026-08-09",
+      "hours": 6,
+      "known_on": "2026-08-01"
+    },
+    {
+      "shop": "印制台",
+      "on": "2026-08-11",
+      "hours": 6,
+      "known_on": "2026-08-01"
+    },
+    {
+      "shop": "印制台",
+      "on": "2026-08-11",
+      "hours": 3,
+      "known_on": "2026-08-05"
+    },
+    {
+      "shop": "印制台",
+      "on": "2026-08-10",
+      "hours": 5,
+      "known_on": "2026-08-01"
+    },
+    {
+      "shop": "窑炉",
+      "on": "2026-08-11",
+      "hours": 8,
+      "known_on": "2026-08-01"
+    }
+  ],
+  "purchases": [
+    {
+      "id": "C1",
+      "round": "R1",
+      "offer": "Q1",
+      "units": 60,
+      "paid": 83000,
+      "refundable_units": 30,
+      "refund_per_unit": 900,
+      "committed_on": "2026-08-04"
+    }
+  ],
+  "holds": [
+    {
+      "round": "R1",
+      "sample": "D11",
+      "shop": "印制台",
+      "on": "2026-08-09",
+      "hours": 6,
+      "strength": "confirmed"
+    },
+    {
+      "round": "R1",
+      "sample": "D21",
+      "shop": "印制台",
+      "on": "2026-08-11",
+      "hours": 6,
+      "strength": "tentative"
+    }
+  ]
+}
